@@ -20,11 +20,14 @@ function getProduct(ProductId) {
         .then(function(Products){
             return Products
         })
+        .catch(function(error) {
+            alert(error)
+        })
 
 }
 
 function displayProduct(Product) {
-    document.getElementsByClassName("item__img").innerHTML = `
+    document.getElementsByClassName("item__img")[0].innerHTML = `
     <img src="${Product.imageUrl}" alt="${Product.altTxt}">
     `
     document.getElementById("title").innerHTML =`

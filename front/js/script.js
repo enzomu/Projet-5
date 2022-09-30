@@ -17,6 +17,9 @@ function getProducts() {
         .then(function(Products){
             return Products
         })
+        .catch(function(error) {
+            alert(error)
+        })
 }
 
 function displayProducts (Product) {
