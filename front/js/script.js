@@ -44,12 +44,12 @@ function displayProducts (Product) {
 
     const elt_h3 = document.createElement("h3")
     elt_h3.setAttribute("class", "productName")
-    elt_h3.textContent = Product.name
+    elt_h3.innerText = Product.name
     elt_article.appendChild(elt_h3)
 
     const elt_p = document.createElement("p")
     elt_p.setAttribute("class", "productDescription")
-    elt_p.textContent = Product.description
+    elt_p.innerText = Product.description
     elt_article.appendChild(elt_p)
 
     document.getElementById("items").appendChild(elt_a)
